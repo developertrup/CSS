@@ -1,0 +1,276 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #263d42;
+    padding: 20px;
+}
+
+.hero {
+    height: 185px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(110deg, #eff5f1, #e0eee7);
+    border-radius: 6px;
+}
+
+.hero-content {
+    float: left;
+    width: 65%;
+    position: relative;
+    z-index: 2;
+}
+
+.hero h2 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 13px;
+    color: #829096;
+    margin-bottom: 18px;
+}
+
+.search-box {
+    width: 320px;
+    padding: 11px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+
+.search-box input {
+    width: 260px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+}
+
+.search-box i {
+    color: #718087;
+}
+
+.hero-image {
+    float: right;
+    width: 150px;
+    height: 100px;
+    margin: 10px 20px 0 0;
+    text-align: center;
+    padding-top: 20px;
+    background: linear-gradient(135deg, #d4e9db, #b4d6c3);
+    border: 3px solid #8bb99b;
+    border-radius: 8px;
+}
+
+.hero-image i {
+    font-size: 50px;
+    color: #dcae37;
+}
+
+.price-tag {
+    position: absolute;
+    left: 15px;
+    bottom: 8px;
+    padding: 7px;
+    background-color: #174f3b;
+    color: #f9dc54;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.decoration {
+    position: absolute;
+    display: block;
+    height: 13px;
+    border-radius: 20px;
+    background-color: #dce9e1;
+}
+
+.decoration-one {
+    width: 140px;
+    top: 20px;
+    right: 180px;
+}
+
+.decoration-two {
+    width: 100px;
+    top: 65px;
+    right: 280px;
+}
+
+.decoration-three {
+    width: 120px;
+    bottom: 20px;
+    right: 220px;
+}
+
+.toolbar {
+    height: 55px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.toolbar p {
+    float: left;
+    margin-top: 12px;
+    font-size: 13px;
+    color: #66747a;
+}
+
+.toolbar-options {
+    float: right;
+}
+
+.toolbar select {
+    padding: 10px;
+    margin-left: 5px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 12px;
+}
+
+.product-grid {
+    font-size: 0;
+}
+
+.product-card {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 24%;
+    min-height: 310px;
+    margin: 0 0.5% 16px;
+    padding: 12px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    background-color: #ffffff;
+    font-size: 14px;
+}
+
+.product-image {
+    height: 145px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.category {
+    font-size: 11px;
+    color: #98a1a5;
+    margin-bottom: 6px;
+}
+
+.product-card h3 {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.rating {
+    color: #f5ad16;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.rating span {
+    color: #899397;
+    font-size: 10px;
+}
+
+.product-bottom {
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.price {
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+.price del {
+    color: #a2a9ac;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.add-button {
+    float: right;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #13a52b, #00bd19);
+    color: white;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background: #087f20;
+}
+
+.badge {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 4px 6px;
+    color: white;
+    font-size: 9px;
+    font-weight: bold;
+    border-radius: 2px;
+    z-index: 2;
+}
+
+.sale {
+    background-color: #ef4444;
+}
+
+.discount {
+    top: 31px;
+    background-color: #168e54;
+}
+
+.hot {
+    left: auto;
+    right: 10px;
+    background-color: #ef4444;
+}
+
+.offer {
+    background-color: #e72f37;
+    font-size: 8px;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 10px 10px;
+    color: #899397;
+    font-size: 12px;
+    clear: both;
+}
+
+
+
+
