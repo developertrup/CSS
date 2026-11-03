@@ -1,0 +1,556 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #222222;
+    background-color: #ffffff;
+}
+.maq{
+    background-color: black;
+    color: whitesmoke;
+    font-size: larger;
+    align-items: center;
+    height: 330px;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo i {
+    font-size: 28px;
+    color: #0e78dc;
+}
+
+.logo h2 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #0e78dc;
+}
+
+nav a {
+    color: #333333;
+    font-size: 14px;
+    margin: 0 12px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #0e78dc;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cart {
+    font-size: 20px;
+    color: #222222;
+}
+
+.btn {
+    display: inline-block;
+    background-color: red;
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #0e78dc;
+}
+
+.hero {
+    min-height: 550px;
+    background-image:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url("https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?w=1600");
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+.hero-content {
+    max-width: 600px;
+}
+
+.small-title {
+    color: #0e78dc;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #0e78dc;
+}
+
+.hero-description {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #eeeeee;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading p {
+    color: #0e78dc;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.section-heading h2 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+
+
+.about {
+    padding: 80px 0;
+}
+
+.about-text {
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-text p {
+    color: #777777;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+
+
+
+.rooms {
+    padding: 80px 0;
+    background-color: #f8f8f8;
+}
+
+.room-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.room-card {
+    width: 31.5%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.07);
+    transition: 0.3s;
+}
+
+.room-card:hover {
+   border: 3px solid black;
+     transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.room-image {
+    width: 100%;
+    height: 230px;
+    position: relative;
+}
+
+.room-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.price-tag {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background-color: #0e78dc;
+    color: #ffffff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.room-info {
+    padding: 22px;
+}
+
+.room-info h3 {
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.room-info p {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #777777;
+    min-height: 70px;
+}
+
+.room-details {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    padding: 15px 0;
+    margin: 15px 0;
+}
+
+.room-details span {
+    font-size: 12px;
+    color: #555555;
+}
+
+.room-details i {
+    color: #0e78dc;
+    margin-right: 5px;
+}
+
+.room-btn {
+    width: 100%;
+    text-align: center;
+}
+
+.features {
+    padding: 80px 0;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.feature-box {
+    width: 31%;
+    padding: 30px 20px;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+}
+
+.feature-box i {
+    font-size: 35px;
+    color: #0e78dc;
+    margin-bottom: 20px;
+}
+
+.feature-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    color: #777777;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.newsletter {
+    padding: 70px 20px;
+    background-color: #222222;
+    color: #ffffff;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.newsletter p {
+    color: #cccccc;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    margin: auto;
+}
+
+.newsletter input {
+    width: 70%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+    font-family: inherit;
+}
+
+.newsletter button {
+    padding: 15px 22px;
+    border: none;
+    background-color: #0e78dc;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #0e78dc;
+}
+
+footer {
+    background-color: #151515;
+    color: #ffffff;
+    padding: 70px 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+.footer-box {
+    width: 22%;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer-box p {
+    color: #aaaaaa;
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.footer-box h3 {
+    font-size: 18px;
+    margin-bottom: 22px;
+}
+
+.footer-box ul {
+    list-style: none;
+}
+
+.footer-box ul li {
+    margin-bottom: 13px;
+}
+
+.footer-box ul li a {
+    color: #aaaaaa;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.footer-box ul li a:hover {
+    color: #0e78dc;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #333333;
+    padding: 10px;
+    margin-right: 8px;
+    border-radius: 5px;
+}
+
+.social-icons a:hover {
+    background-color: #0e78dc;
+}
+
+.instagram-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.instagram-gallery img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.copyright {
+    border-top: 1px solid #333333;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.copyright p {
+    color: #999999;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+@media screen and (max-width: 992px) {
+
+    .room-card {
+        width: 48%;
+    }
+
+    .footer-box {
+        width: 45%;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    header .container {
+        flex-wrap: wrap;
+    }
+
+    .logo h2 {
+        font-size: 22px;
+    }
+
+    nav {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+        font-size: 12px;
+    }
+
+    .header-right {
+        margin-top: 15px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .hero {
+        min-height: 450px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .section-heading h2 {
+        font-size: 27px;
+    }
+
+    .about,
+    .rooms,
+    .features {
+        padding: 55px 0;
+    }
+
+    .room-card {
+        width: 100%;
+    }
+
+    .feature-list {
+        flex-wrap: wrap;
+    }
+
+    .feature-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .newsletter h2 {
+        font-size: 23px;
+    }
+
+    .newsletter form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .newsletter input {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .newsletter button {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .footer-box {
+        width: 100%;
+    }
+
+    .footer-content {
+        gap: 35px;
+    }
+
+}
