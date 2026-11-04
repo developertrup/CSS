@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6d9c5;
+    color: #33231c;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #f8dfcd;
+    gap: 20px;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #60412e;
+    white-space: nowrap;
+}
+
+.logo i {
+    color: #9a694b;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav a {
+    font-size: 12px;
+}
+
+nav a:hover {
+    color: #a66d4a;
+}
+
+.hero {
+    height: 430px;
+    position: relative;
+    background-image:
+        linear-gradient(90deg, #171719 5%, transparent 100%),
+        url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1400&q=85");
+    background-size: cover;
+    background-position: center;
+    color: #f5d4bb;
+}
+
+.hero-text {
+    position: absolute;
+    top: 28%;
+    left: 7%;
+}
+
+.hero-text p {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.hero-text h1 {
+    font-size: 68px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.shop-btn {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 20px;
+    color: #35251c;
+    background-color: #f8e5d7;
+    font-size: 13px;
+}
+
+.section {
+    padding: 40px 7%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-heading h2 {
+    font-size: 26px;
+    margin-bottom: 4px;
+}
+
+.section-heading p {
+    font-size: 13px;
+    color: #695144;
+}
+
+.category-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.category-card {
+    width: 32%;
+    height: 210px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 17px;
+}
+
+.category-card img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(65%);
+}
+
+.overlay {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.overlay h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.overlay a {
+    display: inline-block;
+    padding: 6px 13px;
+    border-radius: 15px;
+    background-color: #302822b8;
+    font-size: 12px;
+}
+
+.shake-container {
+    display: flex;
+    gap: 12px;
+    overflow: hidden;
+}
+
+.shake-card {
+    flex: 1;
+    min-width: 0;
+    padding: 10px;
+    background-color: #e8bfa4;
+    border-radius: 17px;
+    text-align: center;
+}
+
+.likes {
+    display: block;
+    width: fit-content;
+    padding: 4px 6px;
+    background-color: #fff1e5;
+    border-radius: 12px;
+    font-size: 8px;
+}
+
+.shake-card img {
+    height: 140px;
+    object-fit: contain;
+    margin: 5px 0;
+}
+
+.shake-card h3 {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 7px;
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+    font-size: 13px;
+}
+
+.product-info a {
+    color: white;
+    background-color: #49372d;
+    border-radius: 12px;
+    padding: 4px 7px;
+    font-size: 10px;
+}
+
+.blog-container {
+    display: flex;
+    gap: 12px;
+}
+
+.blog-card {
+    flex: 1;
+    min-width: 0;
+    padding: 7px;
+    border-radius: 15px;
+    background-color: #e9c1a6;
+}
+
+.blog-card img {
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.blog-card h3 {
+    margin: 7px 0 4px;
+    font-size: 14px;
+}
+
+.blog-card p {
+    font-size: 11px;
+    line-height: 1.5;
+    color: #604b3f;
+}
+
+footer {
+    padding: 25px 6% 12px;
+    background-color: #151719;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+.footer-container div {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.footer-container h3 {
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.footer-container a {
+    font-size: 9px;
+    color: #e1d1c7;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 10px;
+    background-color: #9b7562;
+}
+
+.footer-bottom a {
+    font-size: 8px;
+    color: white;
+}
+
+@media (max-width: 900px) {
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        height: 350px;
+    }
+
+    .hero-text h1 {
+        font-size: 55px;
+    }
+
+    .section {
+        padding: 35px 5%;
+    }
+
+    .category-card {
+        height: 170px;
+    }
+
+    .shake-card img {
+        height: 110px;
+    }
+
+    .blog-card img {
+        height: 120px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+
+    .hero {
+        height: 230px;
+    }
+
+    .hero-text {
+        top: 28%;
+        left: 5%;
+    }
+
+    .hero-text p {
+        font-size: 15px;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .section {
+        padding: 25px 4%;
+    }
+
+    .section-heading h2 {
+        font-size: 21px;
+    }
+
+    .section-heading p {
+        font-size: 11px;
+    }
+
+    .category-container {
+        gap: 8px;
+    }
+
+    .category-card {
+        height: 105px;
+        border-radius: 12px;
+    }
+
+    .overlay h3 {
+        font-size: 9px;
+    }
+
+    .overlay a {
+        padding: 5px 7px;
+        font-size: 8px;
+    }
+
+    .shake-container,
+    .blog-container {
+        gap: 7px;
+    }
+
+    .shake-card {
+        padding: 5px;
+    }
+
+    .shake-card img {
+        height: 65px;
+    }
+
+    .shake-card h3 {
+        font-size: 10px;
+    }
+
+    .product-info {
+        flex-direction: column;
+        font-size: 10px;
+    }
+
+    .product-info a {
+        font-size: 7px;
+    }
+
+    .blog-card {
+        padding: 5px;
+    }
+
+    .blog-card img {
+        height: 65px;
+    }
+
+    .blog-card h3 {
+        font-size: 10px;
+    }
+
+    .blog-card p {
+        font-size: 8px;
+    }
+
+    .footer-container {
+        gap: 12px;
+    }
+
+    .footer-container h3 {
+        font-size: 10px;
+    }
+
+    .footer-container a {
+        font-size: 8px;
+    }
+
+    .footer-bottom {
+        gap: 8px;
+    }
+}
